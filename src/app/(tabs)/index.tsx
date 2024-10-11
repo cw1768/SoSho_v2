@@ -10,8 +10,14 @@ export default function FeedScreen() {
         // data and renderItem are necessary fields. Each item in posts is passed into renderItem
         <FlatList
             data={posts}
+            className="items-center"
             renderItem={({ item }) => <PostListItem post={item}></PostListItem>}
-            contentContainerStyle={{ gap: 10 }}
+            contentContainerStyle={{
+                gap: 10,
+                maxWidth: 512,
+                width: '100%',
+                backgroundColor: 'white',
+            }}
             showsVerticalScrollIndicator={false}>
         </FlatList>
     );
