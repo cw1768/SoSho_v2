@@ -1,7 +1,5 @@
 import { View, Image, Text } from 'react-native';
 import { Ionicons, Feather, AntDesign } from '@expo/vector-icons'
-import posts from '~/assets/data/posts.json'
-const post1 = posts[0];
 
 export default function PostListItem({ post }) {
     return(
