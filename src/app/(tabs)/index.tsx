@@ -2,7 +2,7 @@ import { View, FlatList } from 'react-native';
 import posts from '~/assets/data/posts.json';
 import PostListItem from '~/src/components/PostListItem';
 
-export default function FeedScreen() {
+export default function Feed() {
     return (
         // array of posts to render
         // data and renderItem are necessary fields. Each item in posts is passed into renderItem
